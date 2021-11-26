@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="292.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="StGame" text="Игра не активна" />
+<HBox fx:id="Hbx" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="402.0"/>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+      <Button mnemonicParsing="false" onAction="#onStart" text="Start">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+      <Button mnemonicParsing="false" onAction="#onPay" text="Pay">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+      <VBox prefHeight="400.0" prefWidth="150.0">
+         <children>
+            <Label fx:id="NamePl" text="Игрок Вася " />
+                  <Label text="На счете денег:" />
+            <Label fx:id="Mon" text="1" />
+         </children>
+               <HBox.margin>
+                  <Insets left="170.0" />
+               </HBox.margin>
+      </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
